@@ -13,6 +13,7 @@ header{
     width: 100%;
     height: 70px;
     position: fixed;
+    background: transparent;
     margin: 0;
     padding: 20px 10%;
     justify-content: space-between;
@@ -33,6 +34,16 @@ header .navbar ul{
     list-style: none;
     padding-right: 60px;
 }
-header .navbar ul li {
-    padding: 10px;
+header .navbar ul li a{
+    /* padding: 20px; */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ededed;
+    margin-left: 35px;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar ul li a:hover,
+header .navbar ul li a.active{
+    color: #06BFF8;
 }
