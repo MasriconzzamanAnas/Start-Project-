@@ -8,6 +8,7 @@
 }
 body {
     background-color: #081b29;
+    color: #ededed;
 }
 header{
     width: 100%;
@@ -19,7 +20,7 @@ header{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    z-index: 100;
+    z-index: 1;
 }
 header .logo a{
     font-size: 25px;
@@ -46,4 +47,38 @@ header .navbar ul li a{
 header .navbar ul li a:hover,
 header .navbar ul li a.active{
     color: #06BFF8;
+}
+.home{
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    padding: 0px 10%;
+}
+.home .text{
+    max-width: 600px;
+}
+.home .text h1{
+    font-size: 41px;
+    font-weight: 700;
+}
+.home .text h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home .text p{
+    font-size: 14px;
+}
+.home .text button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.home .text button a{
+    text-decoration: none;
+    color: #ededed;
+    outline: none;
+    border: solid 1px #00abf0;
+    width: 120px;
 }
