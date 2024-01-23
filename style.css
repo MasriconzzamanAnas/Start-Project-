@@ -7,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background-color: #081b29;
     color: #ededed;
 }
 header{
@@ -23,10 +22,18 @@ header{
     z-index: 1;
 }
 header .logo a{
+    position: relative;
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
     color: #ededed;
+}
+header .logo a::before{
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
 }
 header .navbar ul{
     display: flex;
@@ -51,6 +58,9 @@ header .navbar ul li a.active{
 .home{
     align-items: center;
     height: 100vh;
+    background: url('home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     padding: 0px 10%;
 }
@@ -133,4 +143,17 @@ header .navbar ul li a.active{
 }
 .home-icon a:hover::before{
     height: 100%;
+}
+.home-hover{
+    top: 0;
+    position: absolute;
+    right: 30px;
+    width: 500px;
+    height: 650px;
+    background: transparent;
+    transition: 3s;
+}
+.home-hover:hover{
+    background: #081b29;
+    opacity: .8;
 }
