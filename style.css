@@ -60,14 +60,17 @@ header .navbar ul li a.active{
 .home .text h1{
     font-size: 41px;
     font-weight: 700;
+    line-height: 1.5cm;
 }
 .home .text h3{
     font-size: 30px;
     font-weight: 700;
     color: #00abf0;
+    line-height: 1.5cm;
 }
 .home .text p{
     font-size: 14px;
+    margin-bottom: 30px;
 }
 .home .text  a{
     text-decoration: none;
@@ -91,4 +94,43 @@ header .navbar ul li a.active{
     background: #0DCAF0;
     color: black;
     transition:  cubic-bezier(.17,.67,.83,.67) 0.3s;
+}
+.home-icon{
+    position: absolute;
+    margin-top: 30%;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-icon a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: solid 1px #00abf0;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s;
+}
+.home-icon a:hover{
+    color: #081b29;
+}
+.home-icon a::before{
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #00abf0;
+    z-index: -1;
+    transition: .4s;
+}
+.home-icon a:hover::before{
+    height: 100%;
 }
