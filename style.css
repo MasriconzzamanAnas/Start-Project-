@@ -69,16 +69,26 @@ header .navbar ul li a.active{
 .home .text p{
     font-size: 14px;
 }
-.home .text button {
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    
-}
-.home .text button a{
+.home .text  a{
     text-decoration: none;
-    color: #ededed;
-    outline: none;
     border: solid 1px #00abf0;
-    width: 120px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+.home .text .btn-info{
+    margin-right: 20px;
+}
+.home .text .btn-info:hover{
+    background: transparent;
+    color: #ededed;
+    transition:  cubic-bezier(.17,.67,.83,.67) 0.3s;
+}
+.home .text .let{
+    color: #ededed;
+}
+.home .text .let:hover{
+    background: #0DCAF0;
+    color: black;
+    transition:  cubic-bezier(.17,.67,.83,.67) 0.3s;
 }
