@@ -122,29 +122,68 @@ header{
     animation: goright 1s ease forwards;
     animation-delay: 1s;
 }
-.section1 .text .btn{
-    margin-top: 30px;
+.section1 .text .tbn{
+    position: relative;
+    width: 330px;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+ .section1 .text .tbn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: goright 1s ease forwards;
+    animation-delay: 1.2s;
+} 
+.section1 .text .tbn .bnt{
+    color: black;
+    background: #06BFF8;
     width: 150px;
     height: 40px;
     align-items: center;
     border: #06BFF8 1px solid;
 }
-.section1 .text .bnt{
-    color: black;
-    background: #06BFF8;
-}
-.section1 .text .bnt:hover{
+.section1 .text .tbn .bnt:hover{
     background: #081b29;
     color: #fff;
 }
-.section1 .text .nbt{
+.section1 .text .tbn .nbt{
     color: #fff;
     background: transparent;
-    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    border: #06BFF8 1px solid;
 }
-.section1 .text .nbt:hover{
+.section1 .text .tbn .nbt:hover{
     color: #000000;
     background: #06BFF8;
+}
+.icon{
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    width: 170px;
+    justify-content: space-between;
+}
+/* .icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: goright 1s ease forwards;
+    animation-delay: 1.4s;
+} */
+.icon a{
+    
 }
 
 
